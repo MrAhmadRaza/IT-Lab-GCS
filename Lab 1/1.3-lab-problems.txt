@@ -1,0 +1,60 @@
+--------------------------
+1.3(a): Hello World in C++
+--------------------------
+// this program to print a simple statement
+#include<iostream>
+
+using namespace std;
+
+void main()
+{
+  cout<< "Welcome to the wonderfull world of C++\rHellooo\n";
+  cout<< "Welcome in the wonderfull world of C++\rHellooo\n";
+  cout<< "Lab 1 \t";
+  cout<< "\n End \tProgram \t Bye \a";
+}
+
+----------------------------------------------------
+1.3(b): Write a program to print the following text:
+Hello in    my college
+(empty line)
+I'm a student in IT department
+        Good Bye
+----------------------------------------------------
+#include<iostream>
+
+using namespace std;
+
+void main()
+{
+  cout<< "Hello in \t my college";
+  cout<< "\n I'm a student in IT department";
+  cout<< "\t \t Good Bye";
+}
+
+----------------------------------------------------------
+1.3(c): Find and correct the errors in the following code.
+----------------------------------------------------------
+(i)
+#include <iostream>
+
+void main()
+{
+  cout << "we are happy"
+}
+(ii)
+#include <iostream>
+
+void main()
+{
+  cout >> "c++ first exam/n";
+}
+(iii)
+#include <iostream>
+
+void main()
+{
+  cout<<"\n END\t PROGRAM\t BYE;
+}
+
+
