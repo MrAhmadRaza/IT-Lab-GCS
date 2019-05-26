@@ -1,1 +1,34 @@
+We will cover some basic terms of a C++ program in this session, which would help us in coming problems:
 
+-------------------------
+Structure of C++ program
+-------------------------
+#include<iostream>;
+
+using namespace std;
+
+void main()
+{
+    //Program Body
+}
+*Most of the C++ Programs start with #include <iostream>
+    -iostream: is a header file which contains certain built in functions. Mostly used for cout, cin and cerr. In all the above             mentioned functions c stands for console. So cout is console output, cin is console input.
+
+    -Header Files: in C++ Header files contain definitions of Functions and Variables, which is imported or used into any C++ program by        using the pre-processor #include statement.
+
+    -pre-processor: programs provides preprocessors directives/instruction which tell the compiler to preprocess the source code before       compiling. All of these preprocessor directive begins with a '#' (hash) symbol.
+
+*using namespace std;
+    -a namespace is designed to overcome the difficulty in having same name and is used as additional information to differentiate            similar functions, variables etc. eg. std::cout<<""; and int cout = 5;
+*main()
+    -Every C++ program starts with main(), which is called the main function, entry point of program.
+
+* //
+    -The // character is used at the beginning of a single line comment.
+-----------------------------
+Escape characters in a string
+-----------------------------
+\n: new line
+\t: tab
+\a: alarm/beep
+\r: return the cursor to the first character in the same line.
