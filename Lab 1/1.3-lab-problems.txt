@@ -27,9 +27,9 @@ using namespace std;
 
 void main()
 {
-  cout<< "Hello in \t my college";
-  cout<< "\n I'm a student in IT department";
-  cout<< "\t \t Good Bye";
+  cout<< "your code";
+  cout<< "your code";
+  cout<< "your code";
 }
 
 ----------------------------------------------------------
@@ -84,11 +84,27 @@ void main()
     cout<<"********\n";
 
 }
+----------------------------------
+1.3(e): Draw the following pattern
+----------------------------------
+#########
+#       #
+#       #
+#       #
+#########
 
-##########
-#        #
-#        #
-#        #
-##########
+#include <iostream>
 
+using namespace std;
+
+void main()
+{
+    cout<<"#########\n";
+    cout<<"your code";
+    cout<<"your code";
+    cout<<"your code";
+    cout<<"your code";
+    cout<<"#########\n";
+
+}
 
