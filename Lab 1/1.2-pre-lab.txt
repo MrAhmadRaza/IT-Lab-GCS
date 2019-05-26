@@ -29,6 +29,6 @@ void main()
 Escape characters in a string
 -----------------------------
 \n: new line
-\t: tab
+\t: tab, tab stops every 8th character
 \a: alarm/beep
 \r: return the cursor to the first character in the same line.
