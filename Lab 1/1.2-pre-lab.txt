@@ -32,3 +32,50 @@ Escape characters in a string
 \t: tab, tab stops every 8th character
 \a: alarm/beep
 \r: return the cursor to the first character in the same line.
+
+-------------------------------
+Arithmatic Operations in C++
+-------------------------------
+C++ Operation           C++ arith. Operator     Algebric expression         C++ Expression
+Addition                    +                       a + 7                       a + 7
+Subtraction                 -                       b - 8                       b - 8
+Multiplication              *                       ab or a.b or axb            a * b
+Division                    /                       x/y or other                x / y
+Modulus                     %                       r mod s                     r % s
+
+------------------------------------------
+Precedence of arithmatic operations in C++
+------------------------------------------
+Operator        Operation                       Order of Evaluation
+()              Parentheses         Evaluated first. The expression in the innermost pair is evaluated first. (a + b) * (c - d) -->                                         parenthesis appear in same level, not any order is specified in C++ in such situation. Moreover,                                         order does not matter in such situation.
+*, /, %         Multiplication      Evaluated second, If there are several, they are evaluated left to right.
+                Division, Modulus
++, -            Addition,           Evaluated last, If there are several, they are evaluated left to right.
+                Subtraction
+
+--------------------------------------------------
+Decision Making: Equality and Relational Operators
+--------------------------------------------------
+Standard operator           C++ operator               Sample                   Explanation
+Relational opeators
+>                                >                      a > b                   a is grater than b
+<                                <                      a < b                   a is less than b
+≥	                             >=                     a >= b                  a is grater or equal to b
+≤	                             <=                     a <= b                  a is less or equal to b
+Equality Operators
+=                                 ==                    a == b                  a is equal to b
+≠	                              !=                    a != b                  a is not equal to b
+---------------------------------------------------
+if statement
+---------------------------------------------------
+Codition: 
+    -Expression can be true or false
+    -Can be formed using equality and relational operator
+if statement:
+    -if the condition is true, the body of if statement excutes.
+    -if the condition is false, the body of the if statement does not executes
+if ( condition)
+{
+    Statement(s)
+    
+}
