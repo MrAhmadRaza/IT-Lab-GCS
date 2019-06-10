@@ -13,7 +13,7 @@ void main()
 }
 *Most of the C++ Programs start with #include <iostream>
     -iostream: is a header file which contains certain built in functions. Mostly used for cout, cin and cerr. 
-    In all of the above mentioned functions c stands for console. So cout is console output, cin is console input.
+    Here c stands for console. So 'cout' is console output and 'cin' is console input.
 
     -Header Files: in C++ Header files contain definitions of Functions and Variables, which is imported or used 
      into any C++ program by using the pre-processor #include statement.
