@@ -5,7 +5,7 @@ rectangle and compute Area of triangle.
 ---------------------------------------------
 1.4.2: Read radious of a circle from user and 
 compute area of circle.
-* Use A = pi * r * r    // pi= 3.14
+* Use A = pi * r * r    // pi= 3.14, note that 'pi' is a constant, so define a constant named 'pi' before main function.
 ---------------------------------------------
 1.4.3: Read an integer number of a fixed length (3 digits) from the standard input then print its
 digits separated by spaces. For example if 364 is the input then the output should be 3 6 4.
