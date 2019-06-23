@@ -1,1 +1,2 @@
+- Students must know that how to read input of different types from console. 
 - Students should know the decision structures in c++ before this lab.
