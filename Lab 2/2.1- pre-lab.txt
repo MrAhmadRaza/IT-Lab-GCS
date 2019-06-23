@@ -1,0 +1,1 @@
+- Students should know the decision structures in c++ before this lab.
