@@ -1,1 +1,63 @@
+-----------------------------------------------------------------------
+2.1: In this programme, we will analyze the size of basic data types.
+-----------------------------------------------------------------------
+#include <iostream>
+using namespace std;
+ 
+int main() 
+{
+    cout << "\n\n Find Size of fundamental data types :\n";
+	  cout << "------------------------------------------\n";
+    cout << " The sizeof(char) is :          " << sizeof(char) << " bytes \n" ;
+    cout << " The sizeof(short) is :         " << sizeof(short) << " bytes \n" ;
+    cout << " The sizeof(int) is :           " << sizeof(int) << " bytes \n" ;
+    cout << " The sizeof(long) is :          " << sizeof(long) << " bytes \n" ;
+    cout << " The sizeof(long long) is :     " << sizeof(long long) << " bytes \n";
+    cout << " The sizeof(float) is :         " << sizeof(float) << " bytes \n" ;
+    cout << " The sizeof(double) is :        " << sizeof(double) << " bytes \n";
+    cout << " The sizeof(long double) is :   " << sizeof(long double) << " bytes \n";
+    cout << " The sizeof(bool) is :          " << sizeof(bool) << " bytes \n\n";
+    return 0;
+}
 
+// The size of data type represtents, how large number a type can hold.
+// We use these different types according to our requirements, It depends
+// on the the number we are working with. 
+------------------------------------------------------------------------------
+2.2: A simple program to understand the data types and there respective values.
+------------------------------------------------------------------------------
+#include <iostream>
+using namespace std;
+ 
+int main() 
+{
+   char gender = 'F';             // char is single-quoted
+   bool isEmployed = true;         // true(non-zero) or false(0)
+   unsigned short numOfsons = 2; // [0, 255]
+   short yearOfAppt = 2009;      // [-32767, 32768]
+   unsigned int YearlyPackage = 1500000;   // [0, 4294967295]
+   double height = 79.48;       // With fractional part
+   float gpa = 4.69f;           // Need suffix 'f' for float
+   long totalDrawan = 12047235L;     // Suffix 'L' for long
+   long long balance = 995324987LL;  // Need suffix 'LL' for long long int  
+
+   cout << " The Gender is : " << gender << endl;
+   cout << " Is she married? : " << isEmployed << endl;
+   cout << " Number of sons she has : " << numOfsons << endl;
+   cout << " Year of her appointment : " << yearOfAppt << endl;
+   cout << " Salary for a year : " << YearlyPackage << endl;
+   cout << " Height is : " << height << endl;
+   cout << " GPA is " << gpa << endl;
+   cout << " Salary drawn upto : " << totalDrawan << endl;
+   cout << " Balance till : " << balance << endl;   
+   return 0;
+}
+
+// ** Remember, this is a good practice to use data type according to the range of values of variable 
+// you want to work with. Always avoid to hold extra memory which is not needed. 
+// For example, if you want to store 'age' of a person: Normally a person's age could be [0-100]. 
+//      So 'unsigned short' is best type to store age. 
+
+---------------------------------------------------------------
+2.3:Basic C++ Operations and formating floating point numbers.
+------------------------------------------------
