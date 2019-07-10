@@ -158,24 +158,156 @@ int main()
         cout << n << " is odd.";
     return 0;
 }
------------------------------------------------------
-2.3(e): Check Whether (3 digit) Number is Palindrome
------------------------------------------------------
-//Remember, a number is Palindrome if the reverse of number is equal to the number entered by user.
-// e.g 323 --> reverse of 323 is 323, So is palindrome.
+-----------------------
+2.3(e) if-else problem
+-----------------------
+//Program to find maximum using if-else
 
+Below is step by step descriptive logic to find maximum.
+
+Input two numbers from user. Store it in some variable say num1 and num2.
+Check if(num1 > num2) then print num1 is maximum.
+Check else if(num2 > num1) then print num2 is maximum.
+Check else,  then both the numbers are equal.
+
+// Basic Structure
 #include <iostream>
+
 using namespace std;
 int main()
 {
-     int  num, rev ;
-     cout << "Enter a positive number: ";
-     cin >> num; 
-     // Compute reverse of three digit number
-     cout << " The reverse of the number is: " << rev << endl;
-     if (your code)
-         cout << " The number is a palindrome.";
-     else
-         cout << " The number is not a palindrome.";
+    int num1, num2;
+
+    /* Input two numbers from user */
+    cout << "Enter two numbers: ";
+    cin >> num1 >> num2;
+    
+    // your code to perform described job
+    
     return 0;
+}
+-----------------------------------------------------------
+2.4 Switch Case
+-----------------------------------------------------------
+// Simple Syntex of Switch Case
+switch ( <expression> or <variable> ) 
+{
+	case value1:
+	  //Block 1 Code Here
+	  break;
+
+	case value2:
+	  //Block 1 Code Here
+	  break;
+	...
+
+	default:
+	  Code to execute for not match case
+	  break;
+}
+
+-----------------------------------------------------------
+2.4(a) Switch Example
+-----------------------------------------------------------
+//Simple Switch Example Program for find Vowels
+/* Switch Programs, Find Vowels,Control Programs,C++ Examples */
+
+// Header Files
+#include<iostream>
+
+using namespace std;
+
+//Main Function
+int main() {
+   // Local Variable 'ch' Declaration
+   char ch;
+   
+   cout << "Enter the Letter (In Capital Letter): ";
+   cin >> ch;
+
+   //Switch Case Check
+   switch (ch) {
+      case 'A': cout << "Your Character Is A.Your Character is Vowel\n";
+         break;
+
+      case 'E': cout << "Your Character Is E.Your Character is Vowel\n";
+         break;
+
+      case 'I': cout << "Your Character Is I.Your Character is Vowel\n";
+         break;
+
+      case 'O': cout << "Your Character Is O.Your Character is Vowel\n";
+         break;
+
+      case 'U': cout << "Your Character Is U.Your Character is Vowel\n";
+         break;
+
+      default: cout << "Your Character is Not Vowel.Otherwise Not a Capital Letter\n";
+         break;
+   }
+
+   //Main Function return Statement
+   return 0;
+}
+-----------------------------------------------------------
+2.4(b):(Problem) Write a C++ program, which takes two integer operands 
+and one operator from the user, performs the operation and 
+then prints the result. (Consider the operators +, -, *, /, %).
+-----------------------------------------------------------
+// Remember: Always design a simple algorithm before program a problem.
+// Algorithm
+Step 1: Start
+Step 2: Read x and y values
+Step 3: Read option + or – or * or / or %
+Step 4: If option is ‘+’ res = x + y
+Step 5: If option is ‘-’ res = x - y
+Step 6: If option is ‘*’ res = x * y
+Step 7: If option is ‘/’ res = x / y
+Step 8: If option is ‘%’ res = x % y
+Step 9: If option does not match with + or – or * or / or %
+           Print select option +, -, *, /, /, % only
+Step 10: Print x, option, y, res values
+Step 11: Stop
+
+// Basic Structure 
+#include <iostream>
+
+using namespace std;
+int main()
+{
+   int a, b, c;
+   char op;
+   
+   cout << "Enter your operator(+, -, /, *, %)\n" ;
+   cin >> op;
+   cout << "Enter the values of a and b\n");
+   cin >> a >> b;
+
+   switch(op) // We will decide operation upon operater entered by user
+   {
+      case your code: // Block for addition
+      	c = your code;
+        cout << "Addition of two numbers is "<< c;
+        break;
+      case your code: // Block for subtraction
+      	 c = your code;
+         cout << "Substraction of two numbers is " << c;
+         break;
+      case your code: //Block for multiplication
+      	 c = your code;
+         cout << "Multiplication of two numbers is " << c;
+         break;
+      case your code: // Block for remainder 
+      	 c = your code;
+         cout << "Remainder of two numbers is " << c;
+         break;
+      case your code: // Block for quotient
+      	 c = your code;
+         cout << "Quotient of two numbers is" << c;
+         break;
+      default: 
+      	cout << "Invalid operator";
+         break;
+   }
+   return 0;
 }
