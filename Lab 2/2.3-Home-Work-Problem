@@ -1,0 +1,58 @@
+--------------------------
+Problem 2.3.1 (if-else)
+--------------------------
+Compute Salary of Employ
+Basic Salary <= 10000 : Bonous = 20% of Basic Salary, medical allowance = 10% of Bonous
+Basic Salary <= 30000 : Bonous = 30% of Basic Salary, medical allowance = 15% of Bonous
+Basic Salary > 30000 :  Bonous = 40% of Basic Salary, medical allowance = 20% of Bonous
+
+Simple Procedure:
+-Input the basic salary from user
+-test if basic salary is less than 10000 -> Compute Bonous and madical allowance
+-test if basic salary less or equal to 30000 -> Compute Bonounce and allowance
+-test if basic salary is grater than 30000 -> Compute Bonounce and allowance
+-otherwise input is wrong input (may be negative input)
+-Finally, compute salary as: salary = Basic Salary + Bonous + Madical Allowance
+
+Write your code
+---------------------------
+Problem 2.3.2 (if-else)
+---------------------------
+Write a C++ program to input any character and check whether it is alphabet, 
+digit or special character.
+Simple Procedure:
+-Input a character from user 
+-Test if character is in between a-z or A-Z ((character >= 'a' AND character <= 'z') OR 
+(character >= 'A' AND character <= 'Z')), if true then it is alphabet.
+-Test if characters is in between 0-9 ((character >= '0' AND character <= '9')),
+if condition is true then character is digit.
+-otherwise character is other symbol.
+
+Write your code
+
+-------------------------
+Problem 2.3.3 Switch case
+-------------------------
+Write a C++ program to input any alphabet and check whether it is vowel or consonant.
+Simple Procedure:
+-Input an alphabet from user
+-Test for vowels
+-Finaly, test for consonent.
+
+Write your code
+
+--------------------------
+Problem 2.3.4 Switch Case
+--------------------------
+Write a C++ program to input week number and print week day.
+ 
+ Simple Procedure:
+ -input day number of week.
+ -print day name against respective day number. i.e Monday for 1
+ 
+ Your Code
+ 
+ 
+ -----------------------------------------------------------------------
+ Remember, practice makes a man perfect. So, try to solve more problems. 
+ 
