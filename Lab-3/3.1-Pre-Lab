@@ -4,11 +4,53 @@
 
 Looping Structure:
   looping structure, basically enables us to perform a task repetitively.
+---------------------------
 Types of looping Structure:
+---------------------------
 -for loop 
 -while and do while loops
 
+''''''''''''''''''''''''''''''
+Usecase of for and while loops
+''''''''''''''''''''''''''''''
 Both of these structure have their own use case.
 - for loops used when you exactly know the number of iterations at compile time.
-  - for example you want to compute sum of 10 numbers 
-
+  - for example you want to compute sum of 10 numbers, here we have to iterate 10 times. 
+    So, for loop is best structure for this problem.
+      for(i = 1 to 10)
+- while loops used when you do not know the exact number of iterations at compile time.
+  -for example, you want to read all of the lines in a notepad file.
+    -Here, you do not know the exact number of lines at compile time. So you read the file till 
+     there is no line remaining and hence the best case for while loops.
+      while(file is not end)
+  
+'''''''''''''''''''''''''''''
+Usecase of while and do-while
+'''''''''''''''''''''''''''''
+ - for example you want to write data in a file while its size is less than 2KB.
+    Now What if our file size is already 2KB ?
+    The do-while still would write the file as it will check the condition after first iteration. 
+    which does not satisfy the current scenerio. On the other hand, while loop would 
+    check the condition before first iteration and it would not write the file if the
+    size is already 2KB. Which satisfies the current scenerio and hence the while loop is
+    best in this case.
+    while(size of file is not 2KB)
+    {
+        write the data into file
+    }
+    
+- for example you want two compute sum of the positive numbers entered by the user while he/she do not enter 
+  a negative number. Here you have to take at least one input to start the procedure. So, we can't use the while 
+  loop here as it will check the condition before iteration. So, the do-while is the best structure in this case.
+  do
+  {
+      Enter a number 
+      Add into sum variable if the number is positive
+      
+   } while(the number is not negative)
+   
+   
+   
+   ---------------------------------------------------------------
+   Now try to use the looping structure according to its scenerio.
+   ---------------------------------------------------------------
