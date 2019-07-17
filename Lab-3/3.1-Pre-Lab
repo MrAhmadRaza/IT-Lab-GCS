@@ -18,12 +18,13 @@ Both of these structure have their own use case.
   - for example you want to compute sum of 10 numbers, here we have to iterate 10 times. 
     So, for loop is best structure for this problem.
       for(i = 1 to 10)
+          compute sum
 - while loops used when you do not know the exact number of iterations at compile time.
   -for example, you want to read all of the lines in a notepad file.
     -Here, you do not know the exact number of lines at compile time. So you read the file till 
      there is no line remaining and hence the best case for while loops.
       while(file is not end)
-  
+          write the file
 '''''''''''''''''''''''''''''
 Usecase of while and do-while
 '''''''''''''''''''''''''''''
