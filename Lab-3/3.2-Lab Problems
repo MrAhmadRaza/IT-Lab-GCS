@@ -1,1 +1,72 @@
+---------------------------
+for loop Example 3.1
+---------------------------
+// Compute sum of first 10 natural numbers
+// Here We know the the exact number of iterations.
+// So best structure is for loop
+/*
+Simple Algorithm:
+  -start
+  -iterate over 10 natural numbers (1 to 10)
+    -add the loop numbers to find sum
+  -end
+*/
+
+#include <iostream>
+using namespace std;
+int main()
+{
+    int i,sum=0;
+    cout << "--------------------------------------------------\n";
+    cout << "Compute the sum of first 10 natural numbers:\n";
+    cout << "--------------------------------------------------\n";
+    for (i = 1; i <= 10; i++) # iterate over first 10 numbers 
+    {
+		    sum=sum+i;
+    }
+     cout << "\n The sum of first 10 natural numbers: "<<sum << endl;
+}
+
+----------------------
+for loop Problem 3.2
+----------------------
+// Find the factorial of a number 
+// Again we know the number of iterations, So best case is for loop
+// Note: factorial of 5 is 1*2*3*4*5.
+Simple Algorithm:
+  -start
+  -Input a number to find factorial
+  -iterate from 1 to inut number
+    -multiply the loop numbers to find factorial
+  -end
+*/
+
+#include <iostream>
+using namespace std;
+int main()
+{
+    int num1,factorial=1;
+    cout << "\n\n Find the factorial of a number:\n";
+	  cout << "------------------------------------\n";
+	  cout << " Input a number to find the factorial: ";
+	  cin>> num1;
+    for(your code)
+    {
+        your code
+    }
+    cout<<" The factorial of the given number is: "<<factorial<<endl;
+    return 0;
+ }
+
+
+
+
+
+
+
+
+
+
+
+
 
