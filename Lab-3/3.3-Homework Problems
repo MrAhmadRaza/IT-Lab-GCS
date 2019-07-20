@@ -1,1 +1,11 @@
-
+---------------------
+Homework Problem 3.1
+---------------------
+Write a program in C++ to find the perfect numbers between 1 and 500.
+Remember, a number is perfect if sum of its divisors is equal to number. 
+e.g sum of divisors of 6 is 1 + 2 + 3 = 6. So 6 is perfect number.
+ - Which looping structure is best for this problem  ?
+ Simple Algorithm:
+    - iterate from 1 to 500. 
+      -calculate sum of divisors of each number
+      -if sum is same as number then number is perfect number.
