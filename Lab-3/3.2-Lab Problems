@@ -47,9 +47,8 @@ int main()
 {
     int num1,factorial=1;
     cout << "\n\n Find the factorial of a number:\n";
-	  cout << "------------------------------------\n";
-	  cout << " Input a number to find the factorial: ";
-	  cin>> num1;
+    cout << " Input a number to find the factorial: ";
+    cin>> num1;
     for(your code)
     {
         your code
@@ -57,9 +56,50 @@ int main()
     cout<<" The factorial of the given number is: "<<factorial<<endl;
     return 0;
  }
+--------------------------------------
+for loop problem 3.3 (Fibonacci Series)
+--------------------------------------
+/* Remember, a fibonacci number is the sum of previous two numbers.
+ e.g first 5 fibonacci terms are: 0 1 1 2 3.
+ Here we know the number of iterations. So, the best case is for loop. 
+ Remember, continue command skip the remaining statements in a loop.
+ */
+ 
+#include <iostream>
+using namespace std;
+int main()
+{
+    int n, t1 = 0, t2 = 1, nextTerm = 0;
+    cout << "Enter the number of terms: ";
+    cin >> n;
+    cout << "Fibonacci Series: ";
+    for (int i = 1; i <= n; ++i)
+    {
+        // Prints the first two terms.
+        if(i == 1)
+        {
+            cout << " " << t1;
+            continue; // Skipt the next statements 
+        }
+        if(i == 2)
+        {
+            cout << t2 << " ";
+            continue; // Skipt the next statements
+        }
+	// Now We have two fibonacci numbers in t1 and t2
+        nextTerm = your code // compute next number
+        t1 = your code; // move t1 to t2 
+        t2 = your code; // move t2 to next term
+        
+        cout << nextTerm << " ";
+    }
+    return 0;
+}
 
 
+-------------------------------
 
+-------------------------------
 
 
 
