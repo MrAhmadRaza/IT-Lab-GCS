@@ -97,11 +97,102 @@ int main()
 }
 
 
--------------------------------
+-----------------------
+While loop Example 3.4
+-----------------------
+Compute average of numbers entered by the user.
+-Here we will input the numbers from user and compute average.
+-In this problem, We do not know exactly the number of iterations at compile time and also
+at-least one iteration is not needed (as in do-while). So, the best case is while loop.
 
--------------------------------
+#include<iostream>
+using namespace std;
+int main()
+{
+	int sum = 0, num_of_input, counter = 0, num;
+	float avg;
+	cout << "For how much numbers do you want to compute average: "
+	cin >> num_of_input;
+	while (counter < num_of_input)
+	{
+		cout << counter << " / " << num_of_input << ": Enter the number: ";
+		cin >> num;
+		sum = sum + num // Compute sum to average the numbers
+	}
+	
+	avg = sum / num_of_input;
+	cout << "Average is: " << avg;
+	return 0;
+}
+-----------------------
+While loop Problem 3.5
+-----------------------
+Compute percentage of marks entered by the user.
+-We will create a general program to compute average of marks.
+-In this case we do not the exact number of iterations at compile time and 
+also at-least one iteration is not needed. So the best case is while loop.
+Simple Algorithm:
+ - Input the numbere of subjects from user
+   - iterate over the number of subjects using while loop
+   	-Input obtained marks in each subject
+	-Input total marks in each subject
+   - Compute percentage. (obtained / total) * 100
 
+#include<iostream>
+using namespace std;
+int main()
+{
+	int num_subjects, marks, counter = 0;
+	float percentage, obtained_marks, total_marks;
+	cout << "Enter number of subjects: ";
+	cin >> num_subjects;
+	while(your code) // to iterate over the number of subjects
+	{
+		cout << "Enter the obtained marks in subject " << counter+1 << " : ";
+		cin >> marks;
+		your code // code to add obtained marks
+		cout << "Enter the total marks in subject " << counter+1 << " : ";
+		cin >> marks;
+		your code // code to add total marks
+	}
+	
+	your code // a single line of statement to compute percentage. implement (obtained / total) * 100
+	cout << "You got " << percentage << "% marks.";
+	return 0;
+}
 
+-------------------------
+While loop Problem 3.6
+-------------------------
+
+--------------------------
+do-While loop Example 3.7
+--------------------------
+Calculate sum of positive numbers entered by user.
+- We will compute sum of numbers while user enter positive numbers.
+- Here we need at least one input to compute sum. So, best case is do-while.
+
+#include<iostream>
+using namespace std;
+int main()
+{
+	int sum = 0, num;
+	do
+	{
+		cout << "Enter a positive number: (enter -ve number to stop the loop)\n";
+		cin >> num;
+		if (num > 0):{
+			sum = sum + num;
+		}
+	}while(num > 0); // iterate while the number is positive
+	
+	cout << "Sum of positive numbers is: " << sum;
+	return 0;
+}
+
+--------------------------
+do-While loop Example 3.7
+--------------------------
 
 
 
