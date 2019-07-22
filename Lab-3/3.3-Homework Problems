@@ -9,3 +9,45 @@ e.g sum of divisors of 6 is 1 + 2 + 3 = 6. So 6 is perfect number.
     - iterate from 1 to 500. 
       -calculate sum of divisors of each number
       -if sum is same as number then number is perfect number.
+      
+ #include <iostream>
+ using namespace std;
+ int main()
+ {
+    for (int i = 1 to 500) // write condition
+    {
+       while() // loop to find divisors 
+       {
+          // statements to find compute sum of divisors
+       }
+       // statements to print perfect number if sum of divisors is equal to number
+    }
+   return 0;
+   
+ }
+----------------------
+Homework Problem 3.2
+----------------------
+// Find the factorial of a number 
+// Again we do not know the number of iterations at compile time. So best case is while loop
+// Note: factorial of 5 is 1*2*3*4*5.
+Simple Algorithm:
+  -start
+  -Input a number to find factorial
+  -iterate from 1 to number 
+    -multiply the loop numbers to find factorial
+  -end
+*/
+
+#include <iostream>
+using namespace std;
+int main()
+{
+    int num,factorial=1, counter=0;
+    cout << " Input a number to find the factorial: ";
+    cin>> num;
+    // your set of statements to find factorial.
+    cout<<" The factorial of the given number is: "<<factorial<<endl;
+    return 0;
+ }
+
