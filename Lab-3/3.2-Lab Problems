@@ -30,73 +30,33 @@ int main()
 ----------------------
 for loop Problem 3.2
 ----------------------
-// Find the factorial of a number 
-// Again we know the number of iterations, So best case is for loop
-// Note: factorial of 5 is 1*2*3*4*5.
+
+--------------------------------------
+for loop problem 3.3 Find Sum of even 
+--------------------------------------
+- We will find the sum of even numbers from 1 to 100.
+- Here we know the number of iterations at compile time. So, the best case is
+for loop. 
 Simple Algorithm:
-  -start
-  -Input a number to find factorial
-  -iterate from 1 to inut number
-    -multiply the loop numbers to find factorial
-  -end
-*/
+-We will iterate over 100 numbers
+    -We will compute the sum, if number is even(a number is even if modulus with 2 is 0)
+-end
 
-#include <iostream>
+#include<iostream>
 using namespace std;
 int main()
 {
-    int num1,factorial=1;
-    cout << "\n\n Find the factorial of a number:\n";
-    cout << " Input a number to find the factorial: ";
-    cin>> num1;
-    for(your code)
-    {
-        your code
-    }
-    cout<<" The factorial of the given number is: "<<factorial<<endl;
-    return 0;
- }
---------------------------------------
-for loop problem 3.3 (Fibonacci Series)
---------------------------------------
-/* Remember, a fibonacci number is the sum of previous two numbers.
- e.g first 5 fibonacci terms are: 0 1 1 2 3.
- Here we know the number of iterations. So, the best case is for loop. 
- Remember, continue command skip the remaining statements in a loop.
- */
- 
-#include <iostream>
-using namespace std;
-int main()
-{
-    int n, t1 = 0, t2 = 1, nextTerm = 0;
-    cout << "Enter the number of terms: ";
-    cin >> n;
-    cout << "Fibonacci Series: ";
-    for (int i = 1; i <= n; ++i)
-    {
-        // Prints the first two terms.
-        if(i == 1)
-        {
-            cout << " " << t1;
-            continue; // Skipt the next statements 
-        }
-        if(i == 2)
-        {
-            cout << t2 << " ";
-            continue; // Skipt the next statements
-        }
-	// Now We have two fibonacci numbers in t1 and t2
-        nextTerm = your code // compute next number
-        t1 = your code; // move t1 to t2 
-        t2 = your code; // move t2 to next term
-        
-        cout << nextTerm << " ";
-    }
-    return 0;
+     int sum;
+     for(int i =  0; i <= 100; i++)
+     {
+     	if(your condition) // if modulus with 2 is 0
+     	{
+	     your code	// a single statement to compute statement 
+	}
+     }
+     cout<< "Sum of even numbers in 0 to 100 is: " << sum;
+     return;
 }
-
-
 -----------------------
 While loop Example 3.4
 -----------------------
@@ -161,9 +121,45 @@ int main()
 	return 0;
 }
 
--------------------------
-While loop Problem 3.6
--------------------------
+---------------------------------------
+While loop Problem 3.6 Fibonaci Series
+---------------------------------------
+/* Remember, a fibonacci number is the sum of previous two numbers.
+ e.g first 5 fibonacci terms are: 0 1 1 2 3.
+ Here we do not know the number of iterations at compile time. So, the best case is while loop. 
+ Remember, continue command skip the remaining statements in a loop.
+ */
+ 
+#include <iostream>
+using namespace std;
+int main()
+{
+    int n, t1 = 0, t2 = 1, nextTerm = 0, counter=0;
+    cout << "Enter the number of terms: ";
+    cin >> n;
+    cout << "Fibonacci Series: ";
+    while (counter < n)
+    {
+        // Prints the first two terms.
+        if(counter == 0)
+        {
+            cout << " " << t1;
+            continue; // Skipt the next statements 
+        }
+        if(counter == 1)
+        {
+            cout << t2 << " ";
+            continue; // Skipt the next statements
+        }
+	// Now We have two fibonacci numbers in t1 and t2
+        nextTerm = your code // compute next number
+        t1 = your code; // move t1 to t2 
+        t2 = your code; // move t2 to next term
+        
+        cout << nextTerm << " ";
+    }
+    return 0;
+}
 
 --------------------------
 do-While loop Example 3.7
